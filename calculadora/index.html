@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="png" href="imgs/icon.png">
+    <title>Calculadora</title>
+</head>
+<body>
+    <main data-theme="light">
+    <div class="main">
+        <div class="headerContainer">
+            <div class="header">
+                <h1>Calc.js</h1>
+                <input type="text" id="calc">
+            </div>
+            <input type="button" value="trocar tema" class="others" id="switch">
+        </div>
+            <div class="keys">
+                <input type="button" value="C" class="charkeys special">
+                <input type="button" value="(" class="charkeys valid ">
+                <input type="button" value=")" class="charkeys valid">
+                <input type="button" value="/" class="charkeys valid"><br>
+                <input type="button" value="7" class="charkeys valid">
+                <input type="button" value="8" class="charkeys valid">
+                <input type="button" value="9" class="charkeys valid">
+                <input type="button" value="*" class="charkeys valid"><br>
+                <input type="button" value="4" class="charkeys valid">
+                <input type="button" value="5" class="charkeys valid">
+                <input type="button" value="6" class="charkeys valid">
+                <input type="button" value="-" class="charkeys valid"><br>
+                <input type="button" value="1" class="charkeys valid">
+                <input type="button" value="2" class="charkeys valid">
+                <input type="button" value="3" class="charkeys valid">
+                <input type="button" value="+" class="charkeys valid"><br>
+                <input type="button" value="0" class="charkeys valid">
+                <input type="button" value="." class="charkeys valid">
+                <input type="button" value="%" class="charkeys valid">
+                <input type="button" value="=" class="charkeys special" id="equal">                
+                <div class="containerR">
+                    <div class="resultDiv">
+                        <input type="button" value="Copy"  class="others" id="copy">
+                        <input type="text" id="result">
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>

@@ -1,0 +1,111 @@
+:root {
+    --bg-color: #fcfcfc;
+    --border-color: rgb(0, 0, 0);
+    --font-color: #414141;
+    --button-color: rgb(137, 207, 137);
+    --error-color: #ff0043;
+    --hover-color:rgb(138, 192, 138);
+    --hover-switch: #414141;
+    --font-hover:#000000;
+    --font-button-color:#FFFFFF;
+  }
+  
+body{
+    background-color: var(--bg-color);
+   
+}
+.main{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 70vh;
+
+
+}
+.headerContainer{
+    left: -4px;
+    position: relative;
+}
+#switch{
+    position: absolute;
+    right: -4px;
+    height: 40px;
+    top: 20px;
+    border-radius: 5px;
+    color: var(--font-color);
+    background-color:var(--bg-color)
+}
+#switch:hover{
+    background-color: var(--hover-switch);
+    color: var(--font-switch);
+}
+
+.charkeys{
+    border: 1px solid white;
+    border-radius:5px ;
+    margin: 4px;
+    width: 100px;
+    height: 60px;
+    font-size: larger;
+    background-color: var(--button-color);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: var(--font-button-color);
+}
+.charkeys:hover{
+    background-color:var(--hover-color);
+   
+}
+#calc{
+    height: 40px;
+    margin-bottom: 5px;
+    left: 6px;
+    width: 426px;;
+    position: relative;
+    font-size: large;
+}
+input[type="text"]{
+    text-align: right ;
+    border-color: var(--border-color);
+    color: var(--font-color);
+    background-color: var(--bg-color);
+
+}
+
+h1{
+    color: var(--font-color);
+}
+
+.containerR{
+    margin-top: 2px;
+    position: relative;
+    left: 2px;
+}
+.resultDiv{
+    display: flex;
+}
+#copy {
+    height: 46px;
+    border-radius: .5rem 0 0 .5rem;
+    background-color: var(--bg-color);
+    color: var(--font-color); 
+}
+#result{
+    width: 380px;
+    height: 40px;
+    font-size: larger;
+
+}
+#result.error{
+    background-color: var(--error-color);
+    color: #fcfcfc;
+    text-align: center;
+}
+.others{
+    border-color: var(--border-color);
+}
+.copied{
+    border: 3px solid ;
+    border-color:green;
+    color: green;
+}
